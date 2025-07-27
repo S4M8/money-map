@@ -15,7 +15,7 @@ Ready to start working towards financial freedom? You'll just need [Docker](http
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/money-map.git
+    git clone https://github.com/s4m8/money-map.git
     cd money-map
     ```
 

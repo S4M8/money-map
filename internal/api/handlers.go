@@ -42,7 +42,6 @@ func GetExpenses(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(expenses)
 }
 
-// TransactionRequest is used to decode incoming transaction data
 type TransactionRequest struct {
 	Date     string  `json:"date"`
 	Name     string  `json:"name"`
@@ -177,8 +176,7 @@ func UploadCSV(w http.ResponseWriter, r *http.Request) {
 	}
 	defer file.Close()
 
-	// Get existing transactions to build a categorization map
-	existingExpenses, err := database.GetExpenses(0, 0) // Get all expenses
+	existingExpenses, err := database.GetExpenses(0, 0)
 	if err != nil {
 		http.Error(w, "Failed to get existing expenses", http.StatusInternalServerError)
 		return
@@ -214,7 +212,7 @@ func UploadCSV(w http.ResponseWriter, r *http.Request) {
 		date, err := time.Parse("01/02/06", record[2])
 		if err != nil {
 			log.Printf("Skipping row with invalid date: %v", err)
-			continue // Skip rows with invalid date format
+			continue 
 		}
 
 		amountStr := strings.Replace(record[7], "$", "", -1)
@@ -222,7 +220,7 @@ func UploadCSV(w http.ResponseWriter, r *http.Request) {
 		amount, err := strconv.ParseFloat(amountStr, 64)
 		if err != nil {
 			log.Printf("Skipping row with invalid amount: %v", err)
-			continue // Skip rows with invalid amount
+			continue 
 		}
 
 		transaction := models.Transaction{
@@ -239,14 +237,12 @@ func UploadCSV(w http.ResponseWriter, r *http.Request) {
 				return
 			}
 		} else {
-			transaction.Amount = -amount // Make amount positive for expense
+			transaction.Amount = -amount 
 			transaction.Type = "Expense"
 
-			// Categorize based on existing transactions
 			if category, ok := categorizationMap[transaction.Name]; ok {
 				transaction.Category = category
 			} else {
-				// If no match is found, use the CSV category
 				transaction.Category = mapCsvCategory(record[5])
 			}
 

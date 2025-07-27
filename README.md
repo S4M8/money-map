@@ -1,7 +1,6 @@
-# 🗺️ Money Map: Your Personal Finance Adventure! 🗺️
+# 🗺️ Money Map 🗺️
 
-Welcome to Money Map, the fun and easy way to navigate your financial world! 🧭 Track your income, manage your expenses, and chart a course to financial freedom. Let's make budgeting an adventure! 🚀
-
+Welcome to Money Map, the fun and easy way to navigate your financial world! 🧭 Track your income, manage your expenses, and chart a course to financial freedom.
 ## ✨ Key Features
 
 -   **📊 Interactive Dashboard:** Get a clear, at-a-glance view of your financial landscape.
@@ -12,7 +11,7 @@ Welcome to Money Map, the fun and easy way to navigate your financial world! �
 
 ## 🚀 Getting Started
 
-Ready to start your adventure? You'll just need [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
+Ready to start working towards financial freedom? You'll just need [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
 1.  **Clone the repository:**
     ```sh

@@ -1,23 +1,21 @@
-# 🗺️ Money Map: Your Personal Finance Adventure! 🗺️
+# 🗺️ Money Map 🗺️
 
-Welcome to Money Map, the fun and easy way to navigate your financial world! 🧭 Track your income, manage your expenses, and chart a course to financial freedom. Let's make budgeting an adventure! 🚀
-
+Welcome to Money Map, the fun and easy way to navigate your financial world! 🧭 Track your income, manage your expenses, and chart a course to financial freedom.
 ## ✨ Key Features
 
 -   **📊 Interactive Dashboard:** Get a clear, at-a-glance view of your financial landscape.
 -   **💸 Track Income & Expenses:** Easily add and manage your capital (income) and your "Core" & "Choice" expenses.
--   **🤖 Smart Categorization:** Upload a CSV from your bank, and Money Map will automatically categorize your transactions based on your past entries!
 -   **💯 Money Map Score:** Get a simple, intuitive score (from "Poor" to "Great" 👍) that tells you how well you're sticking to the 50/30/20 rule.
 -   **💰 Fund Allocation:** Automatically distribute your savings into different funds like an Emergency Fund, Education Fund, and Investments.
 -   **🐳 Dockerized:** The entire application is containerized, making setup a breeze!
 
 ## 🚀 Getting Started
 
-Ready to start your adventure? You'll just need [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
+Ready to start working towards financial freedom? You'll just need [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/money-map.git
+    git clone https://github.com/s4m8/money-map.git
     cd money-map
     ```
 
